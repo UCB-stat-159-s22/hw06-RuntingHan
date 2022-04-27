@@ -28,8 +28,8 @@ def test_loaddata2():
     assert isinstance(chan_dict_L1, dict)    
 
 def test_dq_channel_to_seglist1():
-	segment_list = rl.dq_channel_to_seglist(chan_dict['CBC_CAT3'])
-	assert type(segment_list) == list
+    segment_list = rl.dq_channel_to_seglist(chan_dict['CBC_CAT3'])
+    assert type(segment_list) == list
     
 def test_read_hdf5():
     assert len(rl.read_hdf5("data/H-H1_LOSC_4_V2-1126259446-32.hdf5", True)) == 7
